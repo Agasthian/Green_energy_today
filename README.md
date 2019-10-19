@@ -1,10 +1,9 @@
-## Trillio
+# Green Energy Today
 
-Practice project on the Advanced CSS and Sass course by Jonas.io
+## [Check it live here]()
 
-## Live Website
-
-[Live](https://agasthian.github.io/Trillio-Practice/)
+![Thumbnail](thumbnail.png)
+A Flex Box Website for The Green Energy Today Magazine company.
 
 ## Concepts
 

@@ -1,0 +1,61 @@
+//////////////////////////////////////////
+// PANE THREE
+#pane-three {
+  padding-top: 13rem;
+  margin-top: 7rem;
+  .pane-three {
+    padding: 2rem 0;
+    min-height: 83vh;
+    display: flex;
+    &__mag {
+      flex: 0 0 50%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      &__wrapper {
+        img.mag {
+          height: 35rem;
+          width: 25rem;
+          border-radius: 5px;
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+        }
+        &-cover {
+          background-color: var(--color-primary-light);
+          height: 35rem;
+          width: 25rem;
+          border-radius: 5px;
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    &__team {
+      flex: 1;
+      background-color: var(--color-primary-light);
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+      &-heading {
+        background-color: var(--color-primary);
+        padding: 1rem 2rem;
+      }
+      &-members {
+        &-box {
+          display: flex;
+          padding: 1rem 0em;
+          padding-left: 3rem;
+
+          img {
+            height: 3.75rem;
+            border-radius: 50%;
+          }
+          &-text {
+            margin-left: 2rem;
+          }
+        }
+        .light {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
