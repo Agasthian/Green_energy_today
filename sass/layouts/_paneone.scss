@@ -1,0 +1,24 @@
+.header {
+  background-color: var(--color-primary);
+  box-shadow: 1rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 18vh;
+}
+.content {
+  .pane-one {
+    display: flex;
+    min-height: 85vh;
+
+    &__content {
+      background-color: lightcoral;
+      flex: 0 0 60%;
+      align-self: center;
+    }
+    &__img {
+      flex: 1;
+      background-color: lightseagreen;
+    }
+  }
+}

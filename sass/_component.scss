@@ -1,0 +1,46 @@
+//////////////////////////////////////////
+// LOGO
+.logo {
+  height: 9rem;
+  margin-left: 2rem;
+}
+
+//////////////////////////////////////////
+//  Button
+.button {
+  &,
+  &:link,
+  &:visited {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+}
+
+//////////////////////////////////////////
+//  NAVIGATION
+.user-nav {
+  display: flex;
+
+  &__link {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+
+    a {
+      text-decoration: none;
+      color: var(--color-primary-dark);
+    }
+  }
+  &__link:hover {
+    background-color: #fff;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  &__link:active,
+  &__link:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
