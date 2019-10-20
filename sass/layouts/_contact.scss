@@ -1,3 +1,5 @@
+//////////////////////////////////////////
+// CONTACT US
 #contact {
   background-color: var(--color-primary-dark);
   font-family: Poppins;
@@ -19,14 +21,23 @@
     &__content {
       display: flex;
 
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+      }
+
       &-nav {
         flex: 0 0 50%;
 
         .footer {
           &__navigation {
             border-top: 1px solid var(--color-primary-light);
-            padding-top: 1rem;
+            padding-top: 2rem;
             display: inline-block;
+            @media only screen and (max-width: $bp-small) {
+              text-align: center;
+              width: 100%;
+              margin-bottom: 6rem;
+            }
           }
           &__list {
           }
@@ -61,10 +72,13 @@
         justify-content: flex-end;
         text-align: end;
 
+        @media only screen and (max-width: $bp-small) {
+          justify-content: center;
+        }
+
         &-text {
           border-top: 1px solid var(--color-primary-light);
-          padding-top: 1rem;
-          width: 72%;
+          padding-top: 2rem;
         }
       }
     }

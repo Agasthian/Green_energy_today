@@ -26,6 +26,14 @@ Grey-dark-3:#999;
   --color-orange: #ff7730;
 }
 
+//Break points - scss variables
+$bp-largest: 75em; //1200px/16 = 75em
+$bp-large: 68.75em; //1100px/16 = 68.75em
+$bp-medium: 56.25em; //900/16 = 56.25em
+$bp-small: 43.75em; //700/16 = 43.75em
+$bp-mobnav: 37.5em; //600/16 = 37.5em
+$bp-smallest: 31.25em; //500/16 = 31.25em
+
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +48,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5
   scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%; // 8/16 = 50%; 1rem = 8px
+  }
 }
 body {
   font-family: 'Raleway', sans-serif;

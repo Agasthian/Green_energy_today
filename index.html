@@ -19,11 +19,23 @@
   <body>
     <div class="layout-wrapper">
       <section id="home">
-        <header class="header ">
-          <div class="header-wrapper container">
+        <header class="nav">
+          <div class="nav-wrapper container">
             <img src="./img/Logo1.png" alt="GET-logo" class="logo" />
             <nav class="user-nav">
-              <div class="user-nav__link button">
+              
+              <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div> 
+              <ul class="user-nav__link">
+                <li class="button"><a href="#">Home</a></li>
+                <li class="button"><a href="#pane-two">Editor Board</a></li>
+                <li class="button"><a href="#pane-three">Magazine</a></li>
+                <li class="button"><a href="#contact">Contact us</a></li>
+              </ul>
+              <!-- <div class="user-nav__link button">
                 <a href="#home">Home</a>
               </div>
               <div class="user-nav__link button">
@@ -34,7 +46,7 @@
               </div>
               <div class="user-nav__link button">
                 <a href="#contact">Contact us</a>
-              </div>
+              </div> -->
             </nav>
           </div>
         </header>
@@ -107,6 +119,10 @@
                     <input type="email" id='email' class='form__input' placeholder='Email address' required>
                     <label for="email" class="form__label">Email address</label>
                   </div>
+                  <div class="form__group">
+                      <input type="number" id='phone' class='form__input' placeholder='Phone Number'>
+                      <label for="phone" class="form__label">Phone Number</label>
+                    </div>
                   <div class="form__group" style="display: flex; justify-content: center;">
                     <button class="button"><i class="fas fa-file-download"></i> &nbsp; Download </button>
                   </div>

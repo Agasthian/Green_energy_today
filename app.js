@@ -24,9 +24,10 @@ function submitForm(e) {
   //Get value
   const name = getElement('name');
   const email = getElement('email');
+  const phone = getElement('phone');
 
   //save message fn call
-  saveMessage(name, email);
+  saveMessage(name, email, phone);
 
   //Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -49,11 +50,25 @@ function getElement(id) {
 }
 
 //Save message to firebase
-function saveMessage(name, email) {
+function saveMessage(name, email, phone) {
   let newGreenEnergyRef = greenEnergyRef.push();
 
   newGreenEnergyRef.set({
     name: name,
-    email: email
+    email: email,
+    phone: phone
   });
 }
+
+//Mobile navbar
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.user-nav__link');
+const links = document.querySelector('.user-nav__link li');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+});
+
+links.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+});

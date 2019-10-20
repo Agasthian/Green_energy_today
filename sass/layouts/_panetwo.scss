@@ -4,10 +4,19 @@
 #pane-two {
   background-color: var(--color-primary-light);
   padding-top: 13rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding-top: 16rem;
+  }
+
   .pane-two {
-    padding: 2rem 0;
+    padding-bottom: 2rem;
     display: flex;
     min-height: 78vh;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
 
     &__editor {
       flex: 0 0 57%;
