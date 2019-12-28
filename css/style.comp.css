@@ -193,7 +193,8 @@ h4 {
       align-self: center; }
       .content #pane-one .pane-one__img-wrapper {
         display: flex;
-        justify-content: center; }
+        flex-direction: column;
+        align-items: center; }
       .content #pane-one .pane-one__img img {
         width: 50%;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -289,7 +290,8 @@ h4 {
       flex: 0 0 50%;
       align-items: center;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-right: 2rem; }
       @media only screen and (max-width: 43.75em) {
         #pane-three .pane-three__mag {
           margin-bottom: 2rem; } }
